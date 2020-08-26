@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p>Beregn din hunds menneskelige alder (gamle metode):</p>
+    <input type="text" id=gamle>
+    <button id=button_gamle>Beregn</button>
+    <p>Bereign din hunds menneskelige alder (nye metode):</p>
+    <input type="text" id=nye>
+    <button id=button_nye>Beregn</button>
+
+
+    <script>
+        document.querySelector("#button_gamle").addEventListener("click", gamleClicked);
+        document.querySelector("#button_nye").addEventListener("click", nyeClicked);
+
+        function gamleClicked() {
+            let alder = document.querySelector("#gamle").value;
+            let humanAge = alder * 7;
+            let svar;
+
+            console.log(`Din hund er ${humanAge} år gammel.`);
+        }
+
+
+        function nyeClicked() {
+            let alder2 = document.querySelector("#nye").value;
+            let humanAge2 = 16 * Math.log(alder2) + 31;
+            let svar2;
+
+            console.log(`Din hund er ${humanAge2} år gammel.`);
+        }
+
+    </script>
+</body>
+
+</html>
