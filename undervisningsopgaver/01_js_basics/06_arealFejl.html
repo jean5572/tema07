@@ -24,12 +24,12 @@
             let længde = document.querySelector("#længde").value;
             let bredde = document.querySelector("#bredde").value;
             let a = areal(længde, bredde);
-            let resultat
+            let resultat;
 
             if (isNaN(a)) {
-                resultat = "Det er ikke et tal, prøv igen!"
+                resultat = "Det er ikke et tal, prøv igen!";
             } else if (a <= 0) {
-                resultat = "Areal er lig 0 eller mindre end 0, prøv igen!"
+                resultat = "Areal er lig 0 eller mindre end 0, prøv igen!";
             } else {
                 resultat = `Arealet er lig ${a}`;
             }
