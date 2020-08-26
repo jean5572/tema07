@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p>Indtast din alder her:</p>
+    <input type="text" id=egenalder>
+    <p>Indtast din dates alder her:</p>
+    <input type="text" id=datesalder>
+
+    <button>Beregn</button>
+
+    <script>
+        window.confirm("Er dig og din date over 15 år?");
+        if (confirm("Velkommen til siden")) {
+        txt = "Det er vigtigt du er over 15 år gammel, hvis du skal date.";
+        } else {
+        txt = "Det er vigtigt du er over 15 år gammel, hvis du skal date.";
+        }
+        document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let egenAlder = document.querySelector("#egenalder").value;
+            let datesAlder = document.querySelector("#datesalder").value;
+            let resultat = egenAlder / 2 + 7;
+            let svar;
+
+            if (resultat < datesAlder) {
+                svar = "Reglen bliver ikke overhold";
+            } else if (resultat > datesAlder) {
+                svar = "Reglen bliver ikke overhold";
+            } else {
+                svar = "Reglen er overholdt!";
+            }
+            console.log(svar);
+        }
+
+    </script>
+</body>
+
+</html>
