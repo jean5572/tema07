@@ -9,27 +9,21 @@
 </head>
 
 <body>
-    <h1>Titel</h1>
-
+    <header>
+        <h1>Titel</h1>
+    </header>
     <main>
+        <h2>Undertitel</h2>
         <section>
-            <h2>Undertitel</h2>
             <article>
-                <div class="sectionwrapper">
-                    <div id="column1">
-
-                        <img id=img_1 src="placeimg_400_300_any.jpg" alt="img">
-                        <h2>Article 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus atque, ex dolorum, expedita ut quas assumenda. A molestias ullam earum, illum, ratione odio. Cupiditate exercitationem omnis, eligendi nisi dignissimos nihil consequuntur nesciunt consequatur quaerat itaque minus! Eveniet et rem, molestias facilis iusto. Laudantium dolor fugit omnis facilis obcaecati et, similique ipsam numquam dolorum veniam unde quisquam beatae expedita quia doloribus explicabo! Aut veritatis fuga excepturi, nam aspernatur quaerat alias pariatur non rerum inventore quas incidunt dignissimos? Quaerat doloremque cumque corrupti molestias, perspiciatis aperiam placeat autem totam aliquam nulla eos earum quis, neque consequatur, tenetur quam ab expedita explicabo error quos provident similique molestiae! Porro, neque. Aut sequi id, dolorem neque eaque pariatur omnis fugiat ad natus, in quam nam! Odio debitis, laboriosam quod ducimus neque nemo animi repellat nulla possimus et, placeat pariatur voluptatum consequuntur quidem soluta nobis, error hic quam dolor aut dolore sint! Similique quibusdam eos cumque, consectetur sapiente perspiciatis nihil officia ab rerum doloribus quaerat autem, ea molestias ducimus quos natus ipsum veritatis tenetur enim deleniti asperiores, aspernatur delectus eius totam quis? Incidunt adipisci, enim tempore excepturi temporibus officiis alias minima possimus rerum perspiciatis accusantium eum ad, voluptatum animi! Sunt beatae neque eos nisi, eaque ipsa culpa!</p>
-                    </div>
-
-                    <div id="column2">
-
-                        <img id=img_2 src="placeimg_400_300_any%20(1).jpg" alt="img">
-                        <h2>Article 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aspernatur ab, id qui dolor tempore maxime odit nam eveniet blanditiis iste, alias asperiores deserunt possimus, sit. Rerum accusamus inventore, laboriosam, fugiat aut adipisci ullam nemo unde dolor rem modi, libero excepturi illum nam. Dolore, veniam ut placeat. Nisi similique, esse, sequi minus molestiae eaque optio nesciunt magnam reprehenderit, quasi totam reiciendis maiores asperiores placeat eligendi inventore beatae delectus suscipit quia magni dolores facere! Necessitatibus ipsam facilis officiis aut. Magni delectus fugit explicabo omnis magnam a tenetur nam dolorum doloribus, iste similique ut, ducimus rem rerum obcaecati! Inventore temporibus veniam, tempora sint odit eum aut, laborum sapiente at incidunt nam, cupiditate aspernatur. Illum minus libero aspernatur officiis labore nesciunt aperiam maxime sapiente iusto similique omnis beatae quibusdam, sit ratione explicabo temporibus, magni dolor assumenda corrupti. Quidem, corrupti voluptates eveniet! Dolor eveniet, suscipit pariatur et dolorum fuga cumque minima sapiente eius. Excepturi vel perferendis ut iusto inventore facere laborum corrupti laboriosam eum voluptatem voluptatibus culpa, cumque odit. Rerum libero sequi et natus cupiditate ipsum quod corporis, adipisci consequuntur, quaerat tenetur placeat vitae eius a impedit officiis ipsam velit dolore temporibus veniam voluptatum eum incidunt officia deleniti. In ut quod deleniti, similique assumenda.</p>
-                    </div>
-                </div>
+                <img src="placeimg_400_300_any.jpg" alt="img">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur, adipisci in molestias officiis explicabo laboriosam possimus voluptas asperiores sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex harum assumenda deserunt quibusdam, amet iure aliquam tempore dolore quo eius!</p>
+            </article>
+            <article>
+                <img src="placeimg_400_300_any%20(1).jpg" alt="img">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque animi adipisci deleniti cum dolorem cupiditate minus sit fugit, dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis laborum aperiam aut doloribus officiis harum porro id ex nulla voluptatibus!</p>
             </article>
         </section>
     </main>
@@ -40,14 +34,11 @@
         const undertitel = document.querySelector("h2");
         const article = document.querySelector("article:first-child");
         const article2 = document.querySelector("article:nth-child(2)");
-        const column = document.querySelector("#column1");
-        const column2 = document.querySelector("#column2");
-        const lorem = document.querySelector("p:first-child");
-        const lorem2 = document.querySelector("p:nth-child(2)");
-        const img1 = document.querySelector("#img_1");
-        const img2 = document.querySelector("#img_2");
+        const image = document.querySelector("img:first-child");
+        const image2 = document.querySelector("img:nth-child(2)");
+
         overskrift.textContent;
-        console.log(overskrift, undertitel, article, article2, column, column2, lorem, lorem2, img1, img2);
+        console.log(overskrift, undertitel, article, article2, image, image2);
 
     </script>
 </body>
