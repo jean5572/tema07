@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <h1>Titel</h1>
+    </header>
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+            <article>
+                <img src="placeimg_400_300_any.jpg" alt="img">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur, adipisci in molestias officiis explicabo laboriosam possimus voluptas asperiores sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex harum assumenda deserunt quibusdam, amet iure aliquam tempore dolore quo eius!</p>
+            </article>
+            <article>
+                <img src="placeimg_400_300_any%20(1).jpg" alt="img">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque animi adipisci deleniti cum dolorem cupiditate minus sit fugit, dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis laborum aperiam aut doloribus officiis harum porro id ex nulla voluptatibus!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer> This is the footer</footer>
+    <script>
+        const title = document.querySelector("h1");
+        const undeTitle = document.querySelector("h2");
+        const article1 = document.querySelector("article:nth-child(1)");
+        const img1 = document.querySelector("article:nth-child(1) img");
+        const img2 = document.querySelector("article:nth-child(2) img");
+        const article1Heading = document.querySelector("article:nth-child(1) h3");
+        const article1Content = document.querySelector("article:nth-child(1) p");
+        const article2Heading = document.querySelector("article:nth-child(2) h3");
+        const article2Content = document.querySelector("article:nth-child(2) p");
+        //        console.log(article1, article1Heading, img1, article1Content, article2Heading, img2, article2Content);
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            title.textContent = "Billeder";
+            undeTitle.textContent = "Random";
+            article1Heading.textContent = "Computer";
+            article1Content.textContent = "Bro";
+            article2Heading.innerHTML = "<p>Sko</p>";
+            article2Content.innerHTML = "<b>Bjerge</b>";
+            img1.src = "placeimg_400_300_any%20(2).jpg";
+            img2.src = "placeimg_400_300_any%20(3).jpg";
+            img1.alt = "daw";
+            img2.alt = "daw";
+
+            let mainSection = document.querySelector("section");
+
+            let newArticle = document.createElement("article");
+            let newH3 = document.createElement("h3");
+            let newHeadlineText = document.createTextNode("human");
+            newH3.appendChild(newHeadlineText);
+
+            let newPic = document.createElement("img");
+            newPic.src = "https://placeimg.com/400/300/people";
+            let newContent = document.createElement("p");
+            newContent.textContent = "people";
+            newArticle.appendChild(newPic);
+            newArticle.appendChild(newH3);
+            newArticle.appendChild(newContent);
+            mainSection.appendChild(newArticle);
+
+            img1.addEventListener("click", skiftBillede);
+
+        }
+
+        function skiftBillede() {
+            // console.log(this);
+            let tal = Math.round(Math.random() * 10);
+            img1.src = "https://placeimg.com/400/300/arch?t=" + tal;
+        }
+
+    </script>
+</body>
+
+</html>
