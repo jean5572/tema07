@@ -44,7 +44,14 @@
                 "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg"
             }]
             console.log(dyr);
-            //            article.innerHTML = `<p>Dyr: ${dyr.navn} Type: ${dyr.type}  Levested: ${dyr.levested} Billede:<p> <img src="${dyr.billede}" alt="gris"> `;
+            article.innerHTML =
+                `
+                <p> ${dyr["0"].navn}, ${dyr["0"].type} fra ${dyr["0"].levested}<p>
+                <p> ${dyr["1"].navn}, ${dyr["1"].type} fra ${dyr["1"].levested}<p>
+                <p> ${dyr["2"].navn}, ${dyr["2"].type} fra ${dyr["2"].levested}<p>
+                <p> ${dyr["3"].navn}, ${dyr["3"].type} fra ${dyr["3"].levested}<p>
+                <p> ${dyr["4"].navn}, ${dyr["4"].type} fra ${dyr["4"].levested}<p>
+                `;
         }
 
         //        let dyr = {
