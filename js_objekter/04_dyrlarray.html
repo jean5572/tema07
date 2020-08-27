@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <article></article>
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let article = document.querySelector("article");
+            let dyr = [{
+                "navn": "Gris",
+                "type": "Pattedyr",
+                "levested": "Svinesti",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+            }, {
+                "navn": "Frø",
+                "type": "Amfibe",
+                "levested": "Sø",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png"
+            }, {
+                "navn": "Ræv",
+                "type": "Pattedyr",
+                "levested": "Skov",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png"
+            }, {
+                "navn": "Sild",
+                "type": "Fisk",
+                "levested": "Havet",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.jpg"
+            }, {
+                "navn": "Krokodille",
+                "type": "Krybdyr",
+                "levested": "Havet",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg"
+            }]
+            console.log(dyr);
+            //            article.innerHTML = `<p>Dyr: ${dyr.navn} Type: ${dyr.type}  Levested: ${dyr.levested} Billede:<p> <img src="${dyr.billede}" alt="gris"> `;
+        }
+
+        //        let dyr = {
+        //            "navn": "Gris",
+        //            "type": "Pattedyr",
+        //            "levested": "Svinesti",
+        //            "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+        //        }
+        //        console.log(`Dyr: ${dyr.navn} Type: ${dyr.type}  Levested: ${dyr.levested} Billede: ${dyr.billede}`);
+
+    </script>
+</body>
+
+</html>
