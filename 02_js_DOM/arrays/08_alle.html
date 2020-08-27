@@ -35,9 +35,16 @@
 
         function start() {
             let alleP = document.querySelectorAll("p"); //alle p er en array, man skal bruge et loop
+            let alleH3 = document.querySelectorAll("h3");
             alleP.forEach(p => {
                 p.addEventListener("click", () => {
                     p.classList.add("typo");
+                })
+            })
+
+            alleH3.forEach(h3 => {
+                h3.addEventListener("click", () => {
+                    h3.classList.add("typo");
                 })
             })
 
@@ -45,7 +52,12 @@
                 alleP.forEach(p => {
                     p.classList.remove("typo");
                 })
+                alleH3.forEach(h3 => {
+                    h3.classList.remove("typo");
+                })
             })
+
+
         }
 
     </script>
