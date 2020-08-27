@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+            <article>
+                <img src="placeimg_400_300_any.jpg" alt="img">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur, adipisci in molestias officiis explicabo laboriosam possimus voluptas asperiores sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex harum assumenda deserunt quibusdam, amet iure aliquam tempore dolore quo eius!</p>
+            </article>
+            <article>
+                <img src="placeimg_400_300_any%20(1).jpg" alt="img">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque animi adipisci deleniti cum dolorem cupiditate minus sit fugit, dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis laborum aperiam aut doloribus officiis harum porro id ex nulla voluptatibus!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer> This is the footer</footer>
+    <script>
+        const overskrift = document.querySelector("h1");
+        const undertitel = document.querySelector("h2");
+        const article = document.querySelector("article:first-child");
+        const article2 = document.querySelector("article:nth-child(2)");
+        const h3_1 = document.querySelector("h3:first-child");
+        const h3_2 = document.querySelector("h3:nth-child(2)");
+        const img1 = document.querySelector("#img_1");
+        const img2 = document.querySelector("#img_2");
+        overskrift.textContent;
+        console.log(overskrift, undertitel, article, article2, h3_1, h3_2);
+
+    </script>
+</body>
+
+</html>
